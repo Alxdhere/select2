@@ -83,9 +83,10 @@ define([
       return;
     }
 
+    var clearIcon = this.options.options.clearIcon ? this.options.options.clearIcon : '&times;';
     var $remove = $(
       '<span class="select2-selection__clear">' +
-        '&times;' +
+        clearIcon +
       '</span>'
     );
     $remove.data('data', data);
