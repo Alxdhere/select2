@@ -66,7 +66,7 @@ define([
   };
 
   MultipleSelection.prototype.selectionContainer = function () {
-    var clearIcon = this.options.options.clearIcon ? this.options.options.clearIcon : '&times;';
+    var clearIcon = this.options.get('clearIcon') ? this.options.get('clearIcon') : '&times;';
     var $container = $(
       '<li class="select2-selection__choice">' +
         '<span class="select2-selection__choice__remove" role="presentation">' +
